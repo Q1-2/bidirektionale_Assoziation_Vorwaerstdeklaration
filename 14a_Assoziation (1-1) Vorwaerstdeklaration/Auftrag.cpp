@@ -41,7 +41,7 @@ void Auftrag::zeigeAlles()
 	cout << "Auftrag --> Kunde" << endl;
 	cout << "Auftrag: " << auftrag << endl;
 	if (fuerKunde != nullptr) {
-		cout << "Auftrag: " << fuerKunde->getKunde() << endl; // Annahme, dass getAuftrag() existiert
+		cout << "Auftrag: " << fuerKunde->getName() << endl; // Annahme, dass getAuftrag() existiert
 	}
 	else {
 		cout << "Auftrag: Kein Auftrag vorhanden." << endl;

@@ -7,7 +7,7 @@ using namespace std;
 
 Kunde::Kunde(string n_init)
 {
-	kunde = n_init;
+	name = n_init;
 	meinAuftrag = nullptr;
 }
 
@@ -16,9 +16,9 @@ Kunde::~Kunde()
 	meinAuftrag = nullptr;
 }
 
-void Kunde::setKunde(string init)
+void Kunde::setName(string init)
 {
-	kunde = init;
+	name = init;
 }
 
 void Kunde::setMeinAuftrag(Auftrag* init)
@@ -27,9 +27,9 @@ void Kunde::setMeinAuftrag(Auftrag* init)
 	meinAuftrag->setFuerKunde(this); //Damit weiß der Auftrag auch von seinem Kunden.
 }
 
-string Kunde::getKunde()
+string Kunde::getName()
 {
-	return kunde;
+	return name;
 }
 
 Auftrag* Kunde::getMeinAuftrag()
@@ -40,7 +40,7 @@ Auftrag* Kunde::getMeinAuftrag()
 void Kunde::zeigeAlles()
 {
 	cout << "Kunde --> Auftrag" << endl;
-	cout << "Kunde: " << kunde << endl;
+	cout << "Kunde: " << name << endl;
 	if (meinAuftrag != nullptr) {
 		cout << "Auftrag: " << meinAuftrag->getAuftrag() << endl; // Annahme, dass getAuftrag() existiert
 	}
