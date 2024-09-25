@@ -2,8 +2,8 @@
 #include <string>
 using namespace std;
 
-#include "Auftrag.h"
-// class Auftrag; //Vorwärtsdeklaration - "Henne-Ei" Problem, wird mit der Klasse Auftrag wird vorab "nur" Deklariert, damit sie in der Klasse Kunde schon benutzt werden kann.
+//#include "Auftrag.h"
+ class Auftrag; //Vorwärtsdeklaration - "Henne-Ei" Problem, wird mit der Klasse Auftrag wird vorab "nur" Deklariert, damit sie in der Klasse Kunde schon benutzt werden kann.
 
 class Kunde
 {
